@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login - Micro Controller</title>
+    <title>Login - Car Consultation</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
                     <div class="col-md-8">
                         <div class="mb-4">
                             <h3>Sign In</h3>
-                            <p class="mb-4">Masukkan email dan password untuk login ke web Penguin Micro Controller</p>
+                            <p class="mb-4">Masukkan email dan password untuk login ke web Car Consultation</p>
                         </div>
                         @if(Session::has('error'))
                             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

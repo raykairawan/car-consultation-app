@@ -17,7 +17,7 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->flash('success', 'Anda berhasil login.');
-            return redirect('/admin')->with('success', 'Login berhasil');
+            return redirect('/admin/consultations')->with('success', 'Login berhasil');
         } else {
             Session::flash('error', 'Login gagal! Silakan coba lagi.');
             return back()->withErrors(['email' => 'Email atau Password salah'])->withInput();
@@ -31,6 +31,6 @@ class AuthController extends Controller
         $request->session()->regenerateToken();
 
         Session::flash('success', 'Logout berhasil!');
-        return redirect()->route('login');
+        return redirect()->route('user.index');
     }
 }
